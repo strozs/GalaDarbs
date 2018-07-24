@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+  <navbar>
+    <a href="index.html">
+    <img id="logo" src="img/jekabpils_logo_trans.png" alt="Jēkabpils logo"></a>
+
+    <div class="navbar">
+      <ul class="navbar-ul">
+        <li><a href="carousel.html">Carousel</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="api.html">API</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </navbar>
+
+<div style="text-align:center">
+  <h2>Jēkabpils skatu galerija</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img/jek_ainava.jpg" alt="Baznīca" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jek_muzejs.jpg" alt="Muzejs" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jek_pamatskola.jpg" alt="Dignājas pamatskola" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jek_tilts.jpg" alt="Tilts" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="img/jek_vecpilseta.jpg" alt="Baznīca" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jek_zirgs.jpg" alt="Muzejs" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jek_vecpilseta2.jpg" alt="Dignājas pamatskola" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/jekabpils.jpg" alt="Tilts" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    // imgText.innerHTML = imgs.alt; (shows alt text)
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

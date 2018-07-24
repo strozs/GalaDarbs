@@ -1,0 +1,168 @@
+*{
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+/* header{
+  overflow: auto;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+} */
+
+h1{
+  text-align: center;
+  padding: 50px;
+}
+
+.main-h1{
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+#logo{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10px;
+  float: left;
+}
+
+#logo:hover{
+  /* background: #333 url("../img/lusis2.jpg") no-repeat center;
+  background-size: 150px 150px; */
+
+ display: block;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ background: url("../img/lusis22.png") no-repeat center;
+ width: 125px; /* Width of new image */
+ height: 125px; /* Height of new image */
+ padding-left: 125px; /* Equal to width of new image */
+
+}
+
+.navbar{
+  /* margin-left: 150px; */
+  text-transform: uppercase;
+  /* overflow: hidden; */
+}
+
+.navbar-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /* background: #333 url("../img/jek_ainava.jpg") no-repeat;
+  background-position: 40% 28%; */
+}
+
+.navbar-ul li{
+  float: right;
+}
+
+.navbar-ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 62px 70px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  background-color: rgba(51, 204, 51, 1);
+}
+
+/* .home-main{
+  float: left;
+} */
+
+.main-lists{
+  /* border: 2px solid blue; */
+  float: left;
+  padding-left: 50px;
+  padding-right: 20px;
+  overflow: auto;
+}
+
+.img-div{
+  float: left;
+}
+
+.main-ul{
+  border-left: solid 5px grey;
+}
+
+.li-header{
+  font-size: 1.5em;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.li-lower{
+  list-style-type: none;
+  color: grey;
+  font-size: 1.25em;
+}
+
+#main-img{
+  padding-left: 50px;
+}
+
+@media (max-width: 925px) {
+  .navbar li{
+    float: none;
+  }
+  #logo {
+    float: none;
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-main {
+    border: 2px solid red;
+    float: none;
+
+  }
+  .main-lists{
+    
+    float: none;
+  }
+  .img-div {
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar-ul li a {
+    padding: 20px 0;
+  }
+
+}
+
+
+@media (max-width: 970px) {
+  .img-div, .main-lists {
+    width:100%;
+  }
+}
+
+#movies img, #movie img{
+  max-width:100%;
+  height: 200px;
+}
+.col-md-3{
+  height: 350px;
+}
+
+.well.text-center{
+  height: 325px;
+}

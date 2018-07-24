@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="lv">
+  <head>
+    <title>Jēkabpils</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  </head>
+
+  <body>
+    <navbar>
+      <a href="index.html">
+      <img id="logo" src="img/jekabpils_logo_trans.png" alt="Jēkabpils logo"></a>
+
+      <div class="navbar">
+        <ul class="navbar-ul">
+          <li><a href="carousel.html">Carousel</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="api.html">API</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </navbar>
+
+    <!-- <script>
+      $(selector).load("http://www.omdbapi.com/?apikey=4a1cb752&",data,callback);
+    </script> -->
+
+    <!-- <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("http://www.omdbapi.com/?apikey=4a1cb752&", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script> -->
+
+<!-- <script>
+$(function(){
+  $('#search-term').submit(function(event){
+    event.preventDefault();
+    var searchTerm = $('#query').val();
+    getRequest(searchTerm);
+  });
+});
+
+function getRequest(searchTerm){
+  var params = {
+    s: searchTerm,
+    r: 'json',
+  };
+  url = 'http://www.omdbapi.com/?apikey=4a1cb752&';
+
+  $.getJSON(url, params, function(data){
+    showResults(data.Search);
+  });
+}
+
+function showResults(results){
+  var html = "";
+  $.each(results, function(index,value){
+    html += '<p>' + value.Title + '</p>';
+
+  });
+  $('#search-results').html(html);
+
+}
+</script>
+
+<p>Search IMDB!</p>
+ <form id="search-term">
+ Input movie here: <input type="text" name="textField" value="" id="query">
+
+ <input type="submit" value="Submit" style="margin: 0 0 30px 0;">
+ </form>
+ <div id="search-results">
+ </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+
+
+
+
+     <nav class="navbar navbar-default">
+       <div class="container">
+         <div class="navbar-header">
+           <a class="navbar-brand" href="api.html">Movie Info</a>
+         </div>
+       </div>
+     </nav>
+
+     <div class="container">
+     	<div class="jumbotron">
+ 	    	<h3 class="text-center">Search Any Movie In The iMDb Database</h3>
+ 	    	<form id="searchForm">
+ 	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+ 	    	</form>
+ 	    </div>
+     </div>
+
+     <div class="container">
+       <div id="movies" class="row"></div>
+     </div>
+
+     <script
+   src="https://code.jquery.com/jquery-3.1.1.min.js"
+   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+   crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="js/main.js"></script>
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

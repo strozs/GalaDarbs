@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="lv">
+  <head>
+    <title>Jēkabpils</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <navbar>
+      <!-- <div id="logo-div"> -->
+        <a href="index.html">
+        <img id="logo" src="img/jekabpils_logo_trans.png"
+        alt="Jēkabpils logo"></a>
+      <!-- </div> -->
+
+      <div class="navbar">
+        <ul class="navbar-ul">
+          <li><a href="carousel.html">Carousel</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="api.html">API</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </navbar>
+
+    <h1 class="main-h1">Labo pārmaiņu pilsēta</h1>
+
+    <!-- <div class="home-main">
+      <div class="img-div">
+        <img id="main-img" src="img/jekabpils.jpg" alt="Jēkabpils" height="300px" width="500px">
+      </div>
+
+      <div class="main-lists">
+      <ul class="main-ul">
+        <li class="li-header">Header list item, them is this a big maans</li>
+        <li class="li-lower">-Lower list item, i need longer text</li>
+      </ul>
+
+      <ul class="main-ul">
+        <li class="li-header">Header list item, them is this a big maans</li>
+        <li class="li-lower">-Lower list item, i need longer text</li>
+      </ul>
+
+      <ul class="main-ul">
+        <li class="li-header">Header list item, them is this a big maans</li>
+        <li class="li-lower">-Lower list item, i need longer text</li>
+      </ul>
+    </div>
+    </div> -->
+
+
+    <div class="container-fluid">
+      <!-- <h1>Medium Grid</h1>
+      <p>The following example will result in a 50%/50% split on medium and large devices. On small (and extra small) devices, it will automatically stack (100%).</p>
+      <p>Resize the browser window to see the effect.</p> -->
+      <div class="row">
+        <div class="col-md-6">
+          <img id="main-img" src="img/jekabpils.jpg" alt="Jēkabpils" height="400px" width="600px">
+        </div>
+        <div class="col-md-6">
+          <ul class="main-ul">
+            <li class="li-header">Vēsture</li>
+            <li class="li-lower">-Pilsēta, kādu to pazīstam šodien, izveidojusies tikai 1962. gadā pēc jauna tilta pār Daugavu izbūves, apvienojot Krustpili Daugavas labajā krastā un Jēkabpili kreisajā krastā.t</li>
+          </ul>
+
+          <ul class="main-ul">
+            <li class="li-header">Pašvaldība</li>
+            <li class="li-lower">-Jēkabpils pašvaldība, arī Jēkabpils dome ir Jēkabpils pilsētas pašpārvaldes augstākā iestāde. Sastāv no 13 deputātiem, ko ievēl reizi četros gados pašvaldību vēlēšanās. </li>
+          </ul>
+
+          <ul class="main-ul">
+            <li class="li-header">Demogrāfija</li>
+            <li class="li-lower">-Jēkabpils ir mazākā Latvijas republikas pilsēta pēc iedzīvotāju skaita. Iedzīvotāju skaits Jēkabpilī samazinās gan negatīva dabiskā pieauguma, gan migrācijas rezultātā. </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<!-- *************This calls the Modal cookie warning************* -->
+    <div class="container">
+  <!-- <h2>Small Modal</h2> -->
+  <!-- Trigger the modal with a button -->
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">This site uses cookies!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Click "close" to accept</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+<!-- *************This is where the cookie warning ends************* -->
+    <footer>
+      <div>
+        <!-- something -->
+      </div>
+    </footer>
+  </body>
+
+</html>
